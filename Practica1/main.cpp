@@ -22,7 +22,7 @@ int main()
 {
     int i=-1;
     while (i!=0) {
-        cout<<"Introduzca el numero del problema que desea observar: "<<endl;
+        cout<<"Introduzca el numero del problema que desea observar o ingrese 0 para salir: "<<endl;
         cin>>i;
         switch (i) {
         case 0:{
@@ -244,17 +244,17 @@ void problema13(){
     int number=0;
     cout<<"Introduzca el numero con el cual se calculara la suma de los primos menores a el. "<<endl; cin>>number;
     if(number==1) cout<<"El resultado de la suma es 1"<<endl;
-    else if(number==2) cout<<"El resultado de la suma es 3"<<endl;
+    else if(number==2) cout<<"El resultado de la suma es 2"<<endl;
     else{
         int result=2;
-        for(int count=1;count<number;count+=2){
+        for(int count=3;count<number;count+=2){
             bool prime=true;
             for(int j=2;j<count && prime==true; j++){
                 if(count%j==0 && count<number) prime=false;
             }
             if(prime==true) result=result+count;
         }
-        cout<<"El resultado de la suma es "<<result-1<<endl;
+        cout<<"El resultado de la suma es "<<result<<endl;
     }
 }
 
@@ -280,6 +280,7 @@ void problema15(){
         substraction+=1;
     }
     if(n==3) cout<<"En un espiral de 3x3, la suma es: 25"<<endl;
+    else if(n<1) cout<<"El numero que ingrese debe ser positivo. "<<endl;
     else{
         int iteration=n-substraction;
         for(int j=0;j<iteration;j++){
