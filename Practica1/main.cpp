@@ -1,4 +1,4 @@
-//Práctica número 1 Juan Camilo Mazo Castro G6.
+//Práctica número 1 Juan Camilo Mazo Castro G6. 5,13
 
 #include <iostream>
 
