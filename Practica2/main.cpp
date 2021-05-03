@@ -213,6 +213,8 @@ void makeArrayInt(int *p,int num,int length){
     for(int i=1;i<length;i++){
         divider=divider*10;
     }
+    //234
+    //2
     int n=0;
     for(int j=0;j<length;j++){
         n=num/divider;
